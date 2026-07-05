@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", Arial, sans-serif;
+  color: #111;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #1f567d;
+  color: white;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2d2d2d;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  flex: 1;
+  font-weight: 700;
+}
+
+nav a:hover {
+  background-color: #f4d35e;
+  color: #111;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: black;
+  letter-spacing: 2px;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0.75rem;
+  background-color: #1f567d;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.card h3 {
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 0.5rem;
+}
+
+.card p,
+.card ul {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+footer {
+  background-color: #1f567d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.25rem;
+}
+
+#lastModified {
+  color: #f4d35e;
+  font-size: 0.9rem;
+}
+
+#resources-list {
+  display: inline-block;
+  text-align: left;
+  margin: 2rem auto;
+}
