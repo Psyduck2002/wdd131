@@ -3,15 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Kyle Roper">
+
+    <meta name="description" content="Information and weather for Sacramento, California.">
+    <meta name="author" content="Kyle Roper">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
     <script src="scripts/place.js" defer></script>
-    <title>Sacramento Page Weather</title>
+
+    <title>Sacramento, California</title>
 </head>
+
 <body>
-    <h1>Sacramento Weather</h1>
-    <!-- <img src="images/sacramento.jpg" alt="Sacramento" class="sacramento-image">  -->
-     
+    <header>
+        <h1>Sacramento, California</h1>
+    </header>
+
+    <main class="hero">
+        <picture>
+            <source
+                srcset="images/sacramento-large.webp"
+                media="(min-width: 800px)"
+            >
+            <img
+                src="images/sacramento-small.webp"
+                alt="Sacramento, California skyline"
+                width="500"
+                height="300"
+            >
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+
+            <p>Area: 100.7 sq mi</p>
+            <p>Population: 537,000</p>
+            <p>Languages Spoken: English, Spanish</p>
+            <p>Currency: USD</p>
+            <p>Time Zone: Pacific Standard Time</p>
+            <p>Calling Code: 916</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <img
+                class="weather-icon"
+                src="images/sunny.svg"
+                alt="Sunny weather"
+                width="70"
+                height="70"
+            >
+
+            <p>Temperature: 90°F</p>
+            <p>Conditions: Sunny</p>
+            <p>Wind: 6 mph</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Kyle Roper | California, USA
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
