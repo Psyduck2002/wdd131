@@ -1,0 +1,208 @@
+:root {
+    --blue: #0041b3;
+    --light-blue: #cecaf5;
+    --white: #ffffff;
+    --black: #111111;
+    --border: #aaaaaa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--black);
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    margin-top: 20px;
+    padding: 18px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    padding: 25px;
+    background-color: var(--light-blue);
+}
+
+label,
+legend {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+}
+
+textarea {
+    min-height: 140px;
+}
+
+fieldset {
+    margin: 18px 0 0;
+    padding: 0;
+    border: none;
+}
+
+fieldset legend {
+    padding: 0;
+}
+
+fieldset p {
+    margin: 0 0 8px;
+    font-style: italic;
+}
+
+fieldset:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+fieldset:nth-of-type(1) legend {
+    grid-column: 1 / -1;
+}
+
+fieldset:nth-of-type(1) label {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+fieldset:nth-of-type(1) input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+fieldset:nth-of-type(2) label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #eeeeee;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(0, 65, 179, 0.35);
+}
+
+footer {
+    margin-bottom: 20px;
+    padding: 18px;
+    color: var(--white);
+    background-color: var(--blue);
+    text-align: center;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+.rating-fieldset {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.rating-fieldset legend {
+    grid-column: 1 / -1;
+}
+
+.rating-fieldset label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.features-fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    header,
+    main,
+    footer {
+        max-width: 650px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Confirmation that a product review was submitted.">
+    <meta name="author" content="Kyle Roper">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/review.js" defer></script>
+
+    <title>Review Submitted</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="confirmation">
+        <h2>Thank You!</h2>
+
+        <p>Your product review was submitted successfully.</p>
+
+        <p>
+            You have completed
+            <span id="reviewCount">0</span>
+            reviews.
+        </p>
+
+        <a href="form.html">Submit Another Review</a>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Kyle Roper | California, USA
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
