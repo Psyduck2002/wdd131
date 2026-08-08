@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact PsychKy Gaming with a video idea, channel question, collaboration request, sponsorship inquiry, or other message.">
+
+    <meta name="author" content="Kyle Roper">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/psychky.css">
+
+    <script src="scripts/psychky.js" defer></script>
+
+    <title>PsychKy Gaming | Contact Me</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <img class="site-banner"
+            src="images/psychky-banner.jpg"
+            alt="PsychKy Gaming banner">
+
+        <div class="nav-container">
+
+            <button class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation"
+                class="primary-navigation"
+                aria-label="Primary navigation">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a class="active" href="contact.html">Contact Me</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-intro">
+
+            <p class="eyebrow">
+                Get in Touch
+            </p>
+
+            <h1>
+                Contact Me
+            </h1>
+
+            <p>
+                Send me a video idea, question, collaboration request,
+                sponsorship inquiry, or general message. Choose the reason
+                that best fits your note and include enough detail for me
+                to understand what you are reaching out about.
+            </p>
+
+        </section>
+
+
+        <section class="contact-layout">
+
+            <div class="contact-copy">
+
+                <p class="eyebrow">
+                    Message PsychKy
+                </p>
+
+                <h2>
+                    What Can You Send?
+                </h2>
+
+                <ul class="contact-list">
+
+                    <li>
+                        <strong>Video ideas:</strong>
+                        Champions, jungle challenges, or concepts you want
+                        to see.
+                    </li>
+
+                    <li>
+                        <strong>Channel questions:</strong>
+                        Questions about videos, the website, or PsychKy Gaming.
+                    </li>
+
+                    <li>
+                        <strong>Collaborations:</strong>
+                        Creator or community opportunities that fit the channel.
+                    </li>
+
+                    <li>
+                        <strong>Sponsorships:</strong>
+                        Business inquiries with information about the product,
+                        campaign, and expectations.
+                    </li>
+
+                </ul>
+
+
+                <div class="response-note">
+
+                    <h3>
+                        Before You Send
+                    </h3>
+
+                    <p>
+                        Please keep the message clear and respectful.
+                        For business requests, include the company or brand
+                        name and enough information to understand the offer.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="contact-form"
+                class="contact-form"
+                action="thanks.html"
+                method="get">
+
+                <fieldset>
+
+                    <legend>
+                        Your Information
+                    </legend>
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input id="name"
+                        name="name"
+                        type="text"
+                        autocomplete="name"
+                        required>
+
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>
+                        Your Message
+                    </legend>
+
+                    <label for="reason">
+                        Reason for Contact
+                    </label>
+
+                    <select id="reason"
+                        name="reason"
+                        required>
+
+                        <option value=""
+                            selected
+                            disabled>
+                            Choose a reason
+                        </option>
+
+                        <option value="Video idea">
+                            Video idea
+                        </option>
+
+                        <option value="Channel question">
+                            Channel question
+                        </option>
+
+                        <option value="Collaboration">
+                            Collaboration
+                        </option>
+
+                        <option value="Sponsorship">
+                            Sponsorship
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea id="message"
+                        name="message"
+                        rows="7"
+                        minlength="10"
+                        placeholder="Tell me what you would like to talk about."
+                        required></textarea>
+
+                </fieldset>
+
+
+                <label class="checkbox-row" for="reply">
+
+                    <input id="reply"
+                        name="reply"
+                        type="checkbox"
+                        value="yes">
+
+                    <span>
+                        I would like a reply if possible.
+                    </span>
+
+                </label>
+
+
+                <button class="button primary-button submit-button"
+                    type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © <span id="current-year"></span>
+            PsychKy_Gaming
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
